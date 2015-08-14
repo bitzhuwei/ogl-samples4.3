@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\威\Documents\GitHub\ogl-samples-4.3.0.0\ogl-samples\CMakeFiles\f8313bdff2f9f8580d49c67b1d57bfda\RUN_TESTS_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{02B233E4-7319-4BAD-9B03-7757B7BD93CE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

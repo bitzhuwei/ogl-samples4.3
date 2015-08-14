@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\威\Documents\GitHub\ogl-samples-4.3.0.0\ogl-samples\samples\gl-430-texture-view.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\威\Documents\GitHub\ogl-samples-4.3.0.0\ogl-samples\samples\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\威\Documents\GitHub\ogl-samples-4.3.0.0\ogl-samples\data\gl-430\texture-view.vert">
+      <Filter>Shader Files</Filter>
+    </None>
+    <None Include="C:\Users\威\Documents\GitHub\ogl-samples-4.3.0.0\ogl-samples\data\gl-430\texture-view.geom">
+      <Filter>Shader Files</Filter>
+    </None>
+    <None Include="C:\Users\威\Documents\GitHub\ogl-samples-4.3.0.0\ogl-samples\data\gl-430\texture-view.frag">
+      <Filter>Shader Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{D3FE27C3-FDF3-457B-A03D-70A520437B0F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader Files">
+      <UniqueIdentifier>{C2CA88E8-4773-4366-96B3-C7D345735FB4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
