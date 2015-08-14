@@ -108,6 +108,18 @@ namespace gli
 			return Result;
 		}
 
+		int min(int a, int b)
+		{
+			if (a <= b)
+			{
+				return a;
+			}
+			else
+			{
+				return b;
+			}
+		}
+
 		inline image2D copy
 		(
 			image2D const & SrcMipmap, 
@@ -123,8 +135,10 @@ namespace gli
 			glm::byte * DstData = DstMipmap.data();
 			glm::byte const * const SrcData = SrcMipmap.data();
 
-			std::size_t SizeX = std::min(std::size_t(SrcSize.x + SrcPosition.x), std::size_t(DstMipmap.dimensions().x  + DstPosition.x));
-			std::size_t SizeY = std::min(std::size_t(SrcSize.y + SrcPosition.y), std::size_t(DstMipmap.dimensions().y + DstPosition.y));
+			//std::size_t SizeX = std::min(std::size_t(SrcSize.x + SrcPosition.x), std::size_t(DstMipmap.dimensions().x  + DstPosition.x));
+			//std::size_t SizeY = std::min(std::size_t(SrcSize.y + SrcPosition.y), std::size_t(DstMipmap.dimensions().y + DstPosition.y));
+			std::size_t SizeX = min(std::size_t(SrcSize.x + SrcPosition.x), std::size_t(DstMipmap.dimensions().x + DstPosition.x));
+			std::size_t SizeY = min(std::size_t(SrcSize.y + SrcPosition.y), std::size_t(DstMipmap.dimensions().y + DstPosition.y));
 
 			for(std::size_t j = 0; j < SizeY; ++j)
 			{

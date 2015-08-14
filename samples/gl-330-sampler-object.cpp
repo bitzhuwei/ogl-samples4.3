@@ -243,6 +243,17 @@ bool end()
 	return glf::checkError("end");
 }
 
+int max(int a, int b)
+{
+	if (a >= b)
+	{
+		return a;
+	}
+	else
+	{
+		return b;
+	}
+}
 void display()
 {
 	// Compute the MVP (Model View Projection matrix)
@@ -282,7 +293,8 @@ void display()
 
 		int InfoLogLength;
 		glGetProgramiv(ProgramName, GL_INFO_LOG_LENGTH, &InfoLogLength);
-		std::vector<char> Buffer(std::max(InfoLogLength, int(1)));
+		//std::vector<char> Buffer(std::max(InfoLogLength, int(1)));
+		std::vector<char> Buffer(max(InfoLogLength, int(1)));
 		glGetProgramInfoLog(ProgramName, InfoLogLength, NULL, &Buffer[0]);
 		fprintf(stdout, "%s\n", &Buffer[0]);
 	}

@@ -345,6 +345,18 @@ namespace glf
 		return Result == GL_TRUE;
 	}
 
+	int max(int a, int b)
+	{
+		if (a >= b)
+		{
+			return a;
+		}
+		else
+		{
+			return b;
+		}
+	}
+
 	inline bool checkProgram(GLuint ProgramName)
 	{
 		if(!ProgramName)
@@ -358,7 +370,8 @@ namespace glf
 		glGetProgramiv(ProgramName, GL_INFO_LOG_LENGTH, &InfoLogLength);
 		if(InfoLogLength > 0)
 		{
-			std::vector<char> Buffer(std::max(InfoLogLength, int(1)));
+			//std::vector<char> Buffer(std::max(InfoLogLength, int(1)));
+			std::vector<char> Buffer(max(InfoLogLength, int(1)));
 			glGetProgramInfoLog(ProgramName, InfoLogLength, NULL, &Buffer[0]);
 			fprintf(stdout, "%s\n", &Buffer[0]);
 		}
